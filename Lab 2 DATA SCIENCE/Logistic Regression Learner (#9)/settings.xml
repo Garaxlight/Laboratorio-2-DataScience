@@ -56,12 +56,12 @@
         <entry key="useOrderFromTargetDomain" type="xboolean" value="false"/>
         <entry key="useOrderFromFeatureDomain" type="xboolean" value="false"/>
         <entry key="solver" type="xstring" value="SAG"/>
-        <entry key="maxEpoch" type="xint" value="100"/>
-        <entry key="performLazy" type="xboolean" value="true"/>
+        <entry key="maxEpoch" type="xint" value="10000"/>
+        <entry key="performLazy" type="xboolean" value="false"/>
         <entry key="epsilon" type="xdouble" value="1.0E-5"/>
         <entry key="learningRateStrategy" type="xstring" value="Fixed"/>
         <entry key="prior" type="xstring" value="Uniform"/>
-        <entry key="stepSize" type="xdouble" value="0.1"/>
+        <entry key="stepSize" type="xdouble" value="100.0"/>
         <entry key="priorVariance" type="xdouble" value="0.1"/>
         <entry key="inMemory" type="xboolean" value="true"/>
         <entry key="seed" type="xstring" isnull="true" value=""/>
@@ -102,7 +102,7 @@
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 102, Cols: 6"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 204, Cols: 6"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
         <config key="port_3">
