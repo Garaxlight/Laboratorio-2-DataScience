@@ -7,9 +7,13 @@
     </config>
     <config key="model">
         <config key="rules">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="$Clasificacion$=&quot;?&quot; =&gt; &quot;*&quot;"/>
-            <entry key="1" type="xstring" value="TRUE =&gt; $Clasificacion$"/>
+            <entry key="array-size" type="xint" value="6"/>
+            <entry key="0" type="xstring" value="$Clasificacion$ = &quot;****&quot; =&gt; 4"/>
+            <entry key="1" type="xstring" value="$Clasificacion$ = &quot;***&quot; =&gt; 3"/>
+            <entry key="2" type="xstring" value="$Clasificacion$ = &quot;**&quot; =&gt; 2"/>
+            <entry key="3" type="xstring" value="$Clasificacion$ = &quot;*&quot; =&gt; 1"/>
+            <entry key="4" type="xstring" value="$Clasificacion$ = &quot;?&quot; =&gt; 0 "/>
+            <entry key="5" type="xstring" value="TRUE =&gt; 0"/>
         </config>
         <entry key="new-column-name" type="xstring" value="EtiquetaUnificada"/>
         <entry key="replace-column-name" type="xstring" value="Clasificacion"/>
@@ -37,12 +41,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 6365, Cols: 15"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 6365, Cols: 16"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9a82ebdd-051f-4861-9509-cd151e7a2a07"/>
+        <entry key="file_store_id" type="xstring" value="0bc750c0-25c1-4cd8-8342-527559e3882a"/>
     </config>
 </config>
