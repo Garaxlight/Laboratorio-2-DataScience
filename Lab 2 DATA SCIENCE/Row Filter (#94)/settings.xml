@@ -7,16 +7,33 @@
     </config>
     <config key="model">
         <entry key="matchCriteria" type="xstring" value="AND"/>
-        <config key="predicates"/>
+        <config key="predicates">
+            <config key="0">
+                <config key="columnV2">
+                    <entry key="regularChoice" type="xstring" value="Compra"/>
+                    <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
+                </config>
+                <entry key="operator" type="xstring" value="EQ"/>
+                <config key="predicateValues">
+                    <config key="values">
+                        <config key="0">
+                            <config key="typeIdentifier">
+                                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                                <entry key="is_null" type="xboolean" value="false"/>
+                            </config>
+                            <entry key="value" type="xdouble" value="1.0"/>
+                        </config>
+                    </config>
+                    <entry key="inputKind" type="xstring" value="SINGLE"/>
+                </config>
+            </config>
+        </config>
         <entry key="domains" type="xstring" value="RETAIN"/>
         <entry key="outputMode" type="xstring" value="MATCHING"/>
     </config>
+    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="At least one filter criterion is needed."/>
-    </config>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.row3.RowFilterNodeFactory"/>
     <entry key="node-name" type="xstring" value="Row Filter"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -29,16 +46,19 @@
     <entry key="node-feature-version" type="xstring" value="5.5.1.v202507241550"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Row Filter"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 4998, Cols: 22"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="619c0802-585c-4a39-b4f7-8494af007e6b"/>
     </config>
 </config>
